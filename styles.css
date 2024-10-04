@@ -22,8 +22,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 70px;
+    padding: 50px 0px;
     border-radius: 15px;
+    width:35%;
   }
   .header {
     display: flex;
