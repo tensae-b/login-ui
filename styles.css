@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family:  Helvetica, sans-serif;
+    color: black;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100vh;
+  }
+  .background{
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 70px;
+    border-radius: 15px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header p{
+    font-weight: bold;
+    font-size: 18px;
+  }
+ p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .input-container {
+    position: relative;
+    width: 300px;
+  }
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .input-field:focus {
+    border-color: #5D34F2;
+  }
+  .input-label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s;
+    font-size: 12px;
+  }
+  .input-field:focus + .input-label,
+  .input-field:not(:placeholder-shown) + .input-label {
+    top: 0;
+    font-size: 10px;
+    background-color: white;
+    padding: 0 5px;
+    color: #5D34F2;
+  }
+  
+  .signin_btn {
+    padding: 12px;
+    background-color: #5D34F2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:20px;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 20px 0;
+}
+.divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.divider-text {
+    padding: 0 10px;
+    color: #666;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+.text-links {
+    margin-top:10px;
+    display: flex;
+    gap:0px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.text-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.text-links hr{
+    color:#666;
+    height: 7px;
+}
+a{
+    text-decoration: none;
+}
